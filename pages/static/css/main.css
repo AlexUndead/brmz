@@ -342,7 +342,6 @@ html,body
 }
 
 #topmenu ul.menu li:hover ul li {
-	background: url("../images/ulliul.png") no-repeat -3px top transparent;
 	display: block; 
 	width: 100%;
 }

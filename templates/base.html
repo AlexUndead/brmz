@@ -6,6 +6,7 @@
 	<meta name="description" content="Промышленно-торговая ассоциация «Деловое  сотрудничество» занимается поставками различного промышленного оборудования и изготовлением качественных деталей для ж/д транспорта.">
 	<title>ООО "ДСТ импорт-экспорт"</title>
     	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+    	<link rel="stylesheet" href="{% static 'css/slider.css' %}">
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 </head>
 <body onload="showtime()">
@@ -143,10 +144,10 @@
 					 	</script>
 						<style>
 							#featured li.ui-tabs-nav-item a{
-								background:url('./images/backfree.png')
+								background:url("{% static 'images/backfree.png' %}' %}")
 							}
 					 		#featured li.ui-tabs-selected{ 
-						 		background:url('./images/back.png') center left no-repeat;  
+								background:url("{% static 'images/back.png' %}' %}") center left no-repeat;  
 					 		}
 					 		#featured .ui-tabs-panel .info{ 
 					 		   position:absolute; 
@@ -154,7 +155,7 @@
 					 		   height:60px; 
 					 		   width: 707px;
 					 		   padding: 5px 10px;
-					 		   background: url('./images/transparent-bg.png'); 
+					 		   background: url("{% static 'images/transparent-bg.png' %}"); 
 					 		}
 
 					 		#featured .ui-tabs-panel .info p, .podpis {

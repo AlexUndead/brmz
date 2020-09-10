@@ -1,3 +1,4 @@
+{% load static %}
 table.product {
   /*border: 1px solid #aaaaaa;*/
   width: 300px;
@@ -102,7 +103,7 @@ html,body
 	width: 540px;
 	float:left;
 	display: inline;
-	background: url("../images/logo.png") no-repeat transparent;
+	/*background: url("../images/logo.png") no-repeat transparent;*/
 	/*outline: 1px solid green;*/
 }
 

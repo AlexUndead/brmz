@@ -1,0 +1,891 @@
+table.product {
+  /*border: 1px solid #aaaaaa;*/
+  width: 300px;
+ 
+}
+
+.jshop .product_list_hr {border:none;
+}
+
+
+
+.jshop_list_product .product td {
+  vertical-align: middle;
+  text-align:left;
+}
+
+.jshop_list_product {
+ 
+}
+
+/* RESET */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { 
+	border:0;
+}
+
+.clear {clear:both; content:""; display:block; height:0; font-size:0; overflow: hidden;}
+
+/* LAYOUTS */
+
+/*Power rotator*/
+
+html,body 
+{
+    color: #000000;
+    height:100%;
+	font-size: 14px;
+	font-family: verdana,arial,helvetica;
+	background: url("../images/body.png") repeat transparent;
+}
+
+
+#all {
+	margin: 0 auto;
+	min-height: 100%;
+	height:auto!important;
+	height:100%;
+	/*border: 1px solid red;*/
+}
+
+#headerback {
+	margin: 0 auto;
+	height:120px;
+	background-color: #fff;
+}
+
+#header {
+	margin: 0 auto;
+	height:120px;
+	width:1000px;
+	background-color: #fff;
+	/*outline: 1px solid blue;*/
+}
+
+#flogo {
+	height: 120px;
+	width: 120px;
+	float:left;
+	display: inline;
+}
+
+#logo {
+	height: 120px;
+	width: 540px;
+	float:left;
+	display: inline;
+	background: url("../images/logo.png") no-repeat transparent;
+	/*outline: 1px solid green;*/
+}
+
+#icolang {
+	height:120px;
+	width:170px;
+	float:left;
+	display: inline;
+}
+
+#ico {
+	margin-left: 5px;
+	height:60px;
+	width:165px;
+}
+
+#con {
+	margin-top: 28px;
+	height:10px;
+	width:25px;
+	float:left;
+}
+
+#home {
+	margin-top: 28px;
+	height:10px;
+	width:25px;
+	float:left;
+}
+
+#map {
+	margin-top: 28px;
+	height:10px;
+	width:25px;
+	float:left;
+}
+
+#lang {
+	height: 60px;
+    margin-left: -13px;
+    width: 170px;
+}
+
+#inf {
+	height:120px;
+	/*width:170px;*/
+	float:left;
+	display: inline;
+}
+
+#clock {
+	height:60px;
+	width:170px;
+	font-size: 14px;
+	overflow:hidden;
+	background: url("../images/clock.jpg") no-repeat transparent;
+}
+
+#informer {
+	background: url("../images/informer.jpg") no-repeat scroll 0 0 transparent;
+	color: #FFFFFF;
+    font-size: 13px;
+    font-weight: bold;
+    height: 60px;
+    margin: 0 auto;
+    padding: 5px 0 0 32px;
+    width: 138px;
+}
+
+#informer p {
+    margin-top: -2px;
+    padding: 0 0 5px;
+    text-align: justify;
+}
+
+#main {
+	margin: 0 auto;
+	background: url("../images/main.jpg") repeat-x transparent;
+}
+
+#senter {
+	margin:0 auto;
+	width: 1000px;
+}
+
+#topmenu {
+	width:990px;
+	height: 36px;
+    /*padding-top: 4px;*/
+	text-align: center;
+	background: url("../images/topmenu.jpg") repeat-x transparent;
+}
+
+#slider {
+	height:220px;
+	width:1000px;
+	padding: 17px 5px 11px 3px;
+	background: url("../images/slider.jpg") no-repeat transparent;
+}
+
+#sliderinner {
+	height: 220px;
+	width: 992px;
+	background-color:#077cc1;
+	/*outline: 1px solid black;*/
+}
+
+#sidebars {
+	width:1000px;
+	margin: 0 auto;
+	background: url("../images/sidebars.jpg") repeat-y top right transparent;
+}
+
+#modules {
+	width:255px;
+	min-height: 100px;
+	float: left;
+	overflow:hidden;
+	background: transparent;
+}
+
+#content {
+	margin: 0 0 0 8px;
+	width:737px;
+	min-height: 100px;
+	float: left;
+	background: transparent;
+}
+
+
+
+#topcontent {
+	width:737px;
+	height: 8px;
+	background: url("../images/topcontent.jpg") no-repeat transparent;
+}
+
+#comp {
+	padding: 20px 40px 40px;
+}
+
+#separator {
+	margin: 0 auto;
+	margin-bottom: 25px;
+	width: 1000px;
+	height: 107px;
+	clear: both;
+	
+}
+
+#sepback {
+	width: 1000px;
+	height: 13px;
+	position: absolute;
+	margin-top: -13px;
+	background: red;
+	background: url("../images/separator.png") no-repeat transparent;
+}
+
+#footer {
+	margin: -87px auto 0;
+	height: 87px;
+	background: url("../images/footer.png") repeat-x transparent;
+}
+
+#footall {
+	margin: 0 auto;
+	width: 1000px;
+	height: 87px;
+}
+
+
+#footcenttop {
+	width: 1000px;
+	height: 50px;
+}
+
+#footsentbot{
+	margin: 0 auto;
+	padding-top: 10px;
+	color: #FFFFFF;
+    font-size: 12px;
+    height: 27px;
+    line-height: 11px;
+    width: 500px;
+}
+
+
+#search {
+	width: 255px;
+	height: 52px;
+	float: left;
+	/*margin-left: 5px;*/
+	background: transparent;
+}
+
+#botmenu {
+	width: 744px;
+	height: 52px;
+	float: left;
+	text-align: center;
+}
+
+
+
+/*STYLES*/
+
+
+#featured .ui-tabs-panel, #featured .ui-tabs-panel  img {
+    background-color: #077CC1;
+}
+
+
+/* ширина основного пункта меню настраивается здесь. Параметр min-width  устанавливается в пикселях*/
+#topmenu ul.menu li {
+	float: left;
+	height: 36px;
+	list-style-type: none;
+	text-align: center;
+	min-width:110px;
+	position:relative;
+	display: block;
+}
+
+#topmenu ul.menu li ul, #topmenu ul.menu li:hover ul  li ul{
+    display:none;
+    position:absolute;
+    list-style: none;
+
+}
+
+#topmenu ul.menu li ul{
+	top:46px;
+    left:-10px;
+	padding-bottom: 1px;
+	background: url("../images/ulliulbot.png") no-repeat  -3px bottom transparent;
+}
+
+#topmenu ul.menu li:hover ul li {
+	background: url("../images/ulliul.png") no-repeat -3px top transparent;
+	display: block; 
+	width: 100%;
+}
+
+#topmenu ul.menu li:hover ul  li:hover {
+	background: url("../images/ulliulhover.png") no-repeat -3px top transparent;
+}
+
+#topmenu ul.menu li:hover ul  li a {
+	    background: none;
+}
+
+#topmenu ul.menu {
+	list-style-type: none;
+	height: 40px;
+	display: inline-block;
+	text-align: left;
+	list-style:none;
+	padding-right: 1px;
+	width:auto!important;
+	/*background: url("/web/20180721184355im_/http://www.pta-ds.ru/templates/assotiatio../images/sep.png") no-repeat top right transparent;*/
+}
+
+
+#topmenu ul.menu li:hover {
+	height:40px;
+	display: block;
+	z-index: 100;
+	background: url("../images/tophover.jpg") repeat-x top left transparent;
+	position: relative;
+	background: none;
+	background: url("../images/lihover.png") no-repeat top center transparent;
+	position: relative;
+	z-index: 10000;
+	background-size: 100% 43px;
+}
+
+#topmenu ul.menu li:hover a {
+	height:47px;
+	/*background: url("/web/20180721184355im_/http://www.pta-ds.ru/templates/assotiatio../images/lihover.png") no-repeat top center transparent;	
+	position: relative;
+	z-index: 10000;
+background-size: 100% 44px;*/
+}
+ 
+#topmenu ul.menu a {
+	display: block;
+	height: 22px;
+	/*padding: 0 10px;*/
+	overflow: hidden;
+	color: #fff;
+	font-family:Verdana;
+	font-style:bold;
+	font-size: 14px;
+	text-decoration:none;
+	padding-top:6px;
+}
+
+
+
+#topmenu ul.menu li:hover ul{
+    display:block;
+}
+
+#topmenu  {text-align: center;}
+
+
+#topmenu ul.menu li:hover ul li, #topmenu ul.menu li:hover ul li a{
+    height:auto;
+	font-size: 13px;
+} 
+
+#topmenu ul.menu  li ul li {
+text-align: left;
+padding: 10px 0;
+}
+
+#topmenu  li span {
+	display: block;
+	padding-left: 1px;
+	background: url("../images/sep2.png") no-repeat top left transparent;
+	background-size: 8px 30px;
+}
+
+#topmenu ul.menu li a {
+padding: 6px 10px 0;
+}
+
+#topmenu ul.menu li ul li a {
+	padding: 0 2px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+#topmenu ul.menu li  ul span{
+	background: none;
+}
+
+#topmenu ul.menu li.active a, #topmenu ul.menu li a:hover {
+	color:#fff;
+}
+
+
+#topmenu ul.menu li a, #topmenu ul.menu li.active ul li a  {
+	color:#fff;
+}
+
+#botmenu ul {
+    display: inline-block;
+    list-style: none outside none;
+    margin-left: 10px;
+    text-align: left;}
+
+#botmenu li:first-child, #botmenu li.last-child {
+background: none!important;
+}
+
+#botmenu li {
+    float: left;
+    height: 31px;
+    margin-top: 12px;
+    padding: 3px 5px 0;
+    position: relative;
+  	background: url("../images/sep.jpg") no-repeat scroll 0 2px transparent;
+}
+
+#botmenu li a {
+    cursor: pointer;
+	color: #fff;
+	text-decoration: underline;
+	font-size: 12px;
+}
+
+#botmenu ul li ul {
+    background: none repeat scroll 0 0 #transparent;
+    display: none;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    width: 100px;
+}
+
+.pagination  {
+text-align: center;
+padding: 15px;
+}
+
+.counter {
+padding: 5px;
+}
+
+.pagination  ul{
+list-style: none!important;
+display: inline;
+}
+
+.pagination  li{
+display: inline;
+padding: 0 5px;
+}
+
+.pagination  ul li span{
+display:inline-block; overflow: visible;
+}
+
+
+div.item {
+	padding: 0 0 25px 0;
+}
+
+.item-separator {
+	margin: 20px 0;
+	height: 10px;
+}
+
+strong {font-weight: bold;}
+
+
+.search  {
+	height: 26px;
+	margin-top: 15px;
+	vertical-align: middle;
+}
+
+.search label {
+	display: none;
+}
+
+.search input.button  {
+	background: url("../images/button.jpg") repeat-x scroll 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+    font-size: 13px;
+	padding: 5px 0 5px 6px;
+    font-weight: bold;
+    margin-left: 5px;
+    width: 90px;
+	position: relative;
+	vertical-align: middle;
+}
+
+
+.search  input {
+	background: url("../images/search.jpg") repeat scroll 0 0 transparent;
+    border: 1px solid #808080;
+    color: #424242;
+    font-size: 13px;
+    padding: 5px 0 5px 6px;
+	width: 145px;
+	vertical-align: middle;
+   /* width: 120px; */
+}
+
+.readmore {
+	float: right;
+	padding: 5px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #006699;
+	font-weight: bold;
+	padding-bottom: 7px;
+	line-height: 30px;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: #006699;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+h1 {font-size: 19px;}
+h2 {font-size: 17px;}
+h3 {font-size: 15px;}
+h4, h5, h6  {font-size: 14px;}
+
+a {color: #006699;}
+
+#comp ol, #comp ul  {
+	list-style-image: url("../images/ls.jpg");
+	margin-left: 40px;
+}
+ol, ul {
+	margin-left: 10px;
+}
+
+
+.module {
+	margin-bottom: 5px;
+	list-style: none;
+}
+
+.module_prod  ol, .module_prod ul, .module ol, .module ul, .module_prod ul.menu, .module_prod ul.menu li{
+	list-style: none;
+}
+
+.module_prod ul.menu   li {
+	height: 66px;
+	background: url("../images/leftmenu.jpg") no-repeat top right transparent;
+	position: relative;
+	cursor: pointer;
+	list-style: none;
+}
+
+.module_prodall ul.menu   li {
+	height: 66px;
+	background: url("../images/leftmenuall.jpg") no-repeat top right transparent;
+	position: relative;
+	cursor: pointer;
+	list-style: none;
+}
+
+.module_prodall ul.menu   li a {
+	color: #FFFFFF;
+    display: block;
+    font-size: 88%;
+    list-style: none outside none;
+	padding: 10px 5px 5px 20px;
+    text-decoration: none;
+	width: 190px;
+}
+
+
+.module_prod ul.menu   li  a  span.image-title {
+	display: block;
+    left: 70px;
+    margin-top: 45px;
+    position: absolute;
+    right: 20px;
+    top: -50%;
+    width: 120px;
+	cursor: pointer;
+	list-style: none;
+}
+
+.module_prod ul.menu   li img {
+	margin: 0 15px -5px -10px;
+    padding: 5px;
+	float: left;
+	list-style: none;
+	background: url("../images/imgback.jpg") no-repeat top right transparent;
+}
+
+
+.module_prod ul.menu   li a {
+	list-style: none;
+	font-size: 75%;
+	padding-right: 12px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.module  h3, .module_prod h3, .module_prodall h3 {
+	color: #FFFFFF;
+    font-size: 16px;
+    height: 45px;
+    padding: 15px 0 0;
+    text-align: center;
+}
+
+div.module div, div.module_prod  div, div.module_prodall  div  {
+	background: url("../images/modbg.jpg") repeat-y transparent;
+}
+
+div.module div div, div.module_prod  div  div, div.module_prodall  div  div  {
+	background: url("../images/modh3.jpg") no-repeat transparent;
+	
+}
+
+div.module div div  div, div.module_prod  div div div, div.module_prodall  div div div {
+	padding: 0 14px 30px;
+	background: url("../images/modbot.jpg") no-repeat bottom left transparent;
+}
+
+.module_prodall ul.menu {
+	margin-left: 0px;
+}
+
+#clock input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+	font-family: verdana,arial,helvetica;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 26px 0 0 76px;
+}
+
+table.lang-block td{
+padding: 0 5px;
+text-align:left;
+}
+table.lang-block a {
+font-size: 11px;
+color: #FFFFFF;
+text-decoration: underline;
+}
+
+div.mod-languages img {
+    margin-top: 6px;
+}
+
+td.lang-active a {
+text-decoration: none;
+}
+
+div.item-page ul {
+	margin: 5px 0 5px 17px;
+}
+
+/***** blog columns *****/
+
+.cols-1 {
+    display: block;
+    float: none !important;
+    margin: 0 !important;
+}
+
+.cols-2 .column-1 {
+    width: 48%;
+    float: left;
+}
+
+.cols-2 .column-2 {
+    width: 48%;
+    float: right;
+    margin: 0
+}
+
+.cols-3 .column-1 {
+    float: left;
+    width: 33%;
+    
+    
+}
+
+.cols-3 .column-2 {
+    float: left;
+    width: 33%;
+    padding-left:1%;
+    
+}
+
+.cols-3 .column-3 {
+    float: right;
+    width: 32%;
+    
+    
+}
+
+.cols-4 .column-1
+{
+        width:24%;
+        float:left;
+}
+
+.cols-4 .column-2
+{
+        width:24%;
+        padding-left:1%;
+        float:left;
+}
+
+.cols-4 .column-3
+{
+        width:24%;
+        padding-left:1%;
+        float:left
+}
+
+.cols-4 .column-4
+{
+        width:25%;
+        float:right
+}
+
+span.row-separator {display:block; clear:both;}
+em {font-style: italic;}
+
+
+
+.jshop {
+    margin-left: -10px;
+	position: relative;
+}
+
+
+.box_product {
+	/* Для вообще устаревших браузеров задаем цвет фона без градиента */
+	background-color: #009bd3;
+	/* Градиент для Mozilla */
+	background-image: -moz-linear-gradient(top, #009bd3, #017fcb);
+	/* Градиент для Chrome, Safari */
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#009bd3), to(#017fcb));
+	background-image: -webkit-linear-gradient(top, #009bd3, #017fcb);
+	/* Градиент для Opera */
+	background-image: -o-linear-gradient(top, #009bd3, #017fcb);
+	/* Градиент для самых современных браузеров */
+	background-image: linear-gradient(to bottom, #009bd3, #017fcb);
+	/* Градиент для Internet Explorer 7-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff009bd3', endColorstr='#ff017fcb', GradientType=0);
+	min-height:270px;
+	padding:1px;
+	/*margin: 0 20px 0 0;*/
+}
+.jshop_list_product .product .name {
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold;
+	padding: 15px 0 10px;
+	}
+.jshop_list_product .product .description {
+	color:#FFFFFF;
+	font-size:12px;
+	}
+.jshop_list_product .product .image {
+	padding-right:0;
+	}
+.jshop_list_product .image_block {
+	margin-bottom: 0;
+    padding: 0;
+	}
+.jshop_list_product .image_block {
+	padding: 0px;
+	}
+img.jshop_img {
+	padding:0;
+	}
+a.go_to_catalog {
+	text-decoration:underline;
+	}
+a.go_to_catalog:hover {
+	text-decoration:none;
+	}
+	
+.module_prodall .like_h3 {
+	color: #FFFFFF;
+	font-size: 16px;
+	height: 45px;
+	padding: 15px 0 0;
+	text-align: center;
+	font-weight: bold;
+	line-height: 30px;
+	display: block;
+}
+
+#footall .mesto_nahozhedeniya {
+	color: #FFFFFF;
+	font-size: 12px;
+	bottom: 7px;
+	position:absolute;
+	right:0px;
+}
+/*
+tr.table_detal td{
+	font-weight:bold;
+	font-size:18px;
+}
+
+table.list_product td{
+	border: 1px solid;
+	padding: 10px;
+}
+
+table.list_product td.image{
+	padding: 0px;
+}*/
+
+
+.item-271
+{
+	
+	background-color: grey;
+	
+	
+}
+
+
+.item-274
+{
+	
+	background-color: grey;
+	
+	
+}

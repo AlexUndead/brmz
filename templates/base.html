@@ -1,0 +1,389 @@
+{% load static %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-ru" lang="ru-ru" slick-uniqueid="3">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="description" content="Промышленно-торговая ассоциация «Деловое  сотрудничество» занимается поставками различного промышленного оборудования и изготовлением качественных деталей для ж/д транспорта.">
+	<title>ООО "ДСТ импорт-экспорт"</title>
+    	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+<body onload="showtime()">
+	<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+	<style type="text/css">
+		body {
+		  margin-top:0 !important;
+		  padding-top:0 !important;
+		  /*min-width:800px !important;*/
+		}
+	</style>
+	<!-- END WAYBACK TOOLBAR INSERT -->
+	<div id="all">
+		<div id="headerback">
+			<div style="position: relative;" id="header">
+				<div id="flogo"></div>
+				<div id="logo">    
+					<p style="margin-top:41px; text-align: center; font-size: 26px; font-weight: bold;padding-right: 100px;">«ДСТ ИМПОРТ-ЭКСПОРТ»</p>
+				</div><!--end-logo-->
+				<div id="icolang">                
+					<div id="ico">                    
+						<div id="con">  
+							<a href="mailto:dst_04@rambler.ru">
+								<img src="{% static 'images/conv.png' %}">
+							</a>                    
+						</div><!--end-con-->
+						<div id="home">
+							<a href="/">
+								<img src="{% static 'images/home.png' %}">
+							</a>                    
+						</div><!--end-home-->
+						<div id="map">
+							<a href="/sitemap">
+								<img src="{% static 'images/sitemap.png' %}">
+							</a>                    
+						</div><!--end-map-->
+					</div><!--end-ico-->
+				</div><!--end-icolang-->
+				<div id="inf">  
+					<div id="clock">  
+						<script language="JavaScript">
+							 <!--
+							 function showtime()
+							 {  setTimeout("showtime();",1000);
+								callerdate.setTime(callerdate.getTime()+1000);
+								var hh  = String(callerdate.getHours());
+								var mm  = String(callerdate.getMinutes());
+								var ss  = String(callerdate.getSeconds());
+								document.clock.face.value =   
+								((hh < 10)? " " : "") + hh +
+								((mm < 10)? ":0" : ":") + mm +
+								((ss < 10)? ":0" : ":") + ss;
+
+							 }
+								callerdate=new Date(2018,03,31,21,28,00);
+							 -->
+						</script>
+						<form name="clock">
+							<input type="text" name="face" value="" size="15">
+						</form>
+					</div><!--end-clock-->
+               <div style="position:absolute; right: 155px;" id="search">
+						<form action="/" method="post">
+							<div class="search">
+								<label for="mod-search-searchword">Искать...</label>
+								<input name="searchword" id="mod-search-searchword" maxlength="20" class="inputbox" type="text" size="20" value="Что ищем?" onblur="if (this.value=='') this.value='Что ищем?';" onfocus="if (this.value=='Что ищем?') this.value='';"><input type="submit" value="Поиск" class="button" onclick="this.form.searchword.focus();">	
+								<input type="hidden" name="task" value="search">
+								<input type="hidden" name="option" value="com_search">
+								<input type="hidden" name="Itemid" value="102">
+							</div>
+						</form>
+					</div><!--end-search-->
+					<div id="informer">  
+						<div id="lang">  
+							<div class="mod-languages">
+								<table class="lang-block">
+									<tbody>
+										<tr>
+											<td class="lang-active" dir="ltr">
+												<img src="{% static 'images/ru.gif' %}" alt="Русский язык" title="Русский язык">				
+											</td>
+											<td class="lang-active" dir="ltr">
+												<a href="/">Русский язык</a>
+											</td>
+										</tr>
+										<tr>
+											<td class="" dir="ltr">
+												<img src="{% static 'images/en.gif' %}" alt="English language" title="English language">				
+											</td>
+											<td class="" dir="ltr">
+												<a href="/en/home">English language</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div><!--end-lang-->
+					</div><!--end-iformer-->
+				</div><!--end-inf-->
+			</div> <!--end-header-->
+		</div> <!--end-headerback-->
+		<div style="background: none;" id="main">
+			<div id="senter">
+				<div style="background: #017CBB;" id="topmenu">
+					<ul class="menu">
+						<li class="item-102 current active">
+							<span>
+								<a href="/">Главная</a>
+							</span>
+						</li>
+						<li class="item-108">
+							<span>
+								<a href="/news">События</a>
+							</span>
+						</li>
+						<li class="item-110 deeper parent">
+							<span>
+								<a href="/legitimnost-deyatelnosti">Легитимность деятельности</a>
+							</span>
+						</li>
+						<li class="item-111">
+							<span>
+								<a href="/contacts">Контакты</a>
+							</span>
+						</li>
+					</ul>
+				</div><!--end-topmenu-->
+				<div id="slider">
+					<div id="sliderinner">
+						<link rel="stylesheet" type="text/css" href="css/slider.css">
+						<script>
+							$(document).ready(function(){
+								$("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 10000, true);
+							});
+					 	</script>
+						<style>
+							#featured li.ui-tabs-nav-item a{
+								background:url('./images/backfree.png')
+							}
+					 		#featured li.ui-tabs-selected{ 
+						 		background:url('./images/back.png') center left no-repeat;  
+					 		}
+					 		#featured .ui-tabs-panel .info{ 
+					 		   position:absolute; 
+					 		   bottom:10px; right:0; 
+					 		   height:60px; 
+					 		   width: 707px;
+					 		   padding: 5px 10px;
+					 		   background: url('./images/transparent-bg.png'); 
+					 		}
+
+					 		#featured .ui-tabs-panel .info p, .podpis {
+					 			text-shadow: 1px 1px 0 black;
+					 		}
+
+					 		#featured{ 
+					 		   width:100%;
+					 		   margin-left:0;
+					 		   position:relative; 
+					 		   border:none; 
+					 		   height:250px; 
+					 		   background:#087DC3;
+					 		   height:220px;
+					 		   overflow: hidden;
+					 		}
+
+					 		#featured ul.ui-tabs-nav{ 
+					 		   position:absolute; 
+					 		   top:0; left:70%;
+					 		   list-style:none; 
+					 		   padding:0; margin:0; 
+					 		   width:30%;
+					 		   display: none;
+					 		}
+					 		#featured .ui-tabs-panel{ 
+					 		   width:100%;
+					 		   background:#999; position:relative;
+					 		}
+					 		#featured ul.ui-tabs-nav li img{ 
+					 		   float:right; margin:2px 5px; 
+					 		   background:#fff; 
+					 		   padding:2px; 
+					 		   border:1px solid #eee;
+					 		   width:0;
+					 		   height:0;
+					 		}
+					 		#featured ul.ui-tabs-nav li.ui-tabs-selected a{ 
+					 		   background:transparent; 
+					 		   height:52px;
+					 		}
+					 		#featured li.ui-tabs-nav-item a:hover{ 
+					 		   color:#fff;
+					 		   height:52px;
+					 		}
+					 		#featured ul.ui-tabs-nav li{ 
+					 		   padding:1px 0 2px 13px;  
+					 		   font-size:12px; 
+					 		   color:#666; 
+					 		   height:52px;
+					 		}
+						</style>
+						<div id="featured">
+		  					<!-- First Content -->
+							<div id="fragment-1" class="ui-tabs-panel ui-tabs-hide" style="">
+								<img src="{% static 'images/1.png' %}" alt="" width="100%" height="220px">
+			 					<div class="info">
+									<p>Трудное – это то, что может быть сделано немедленно; невозможное – то, что потребует немного больше времени. </p>
+									<span class="podpis">Д. Сантаяна</span>
+			 					</div>
+	    					</div>
+
+	    					<!-- Second Content -->
+	    					<div id="fragment-2" class="ui-tabs-panel ui-tabs-hide" style="">
+								<img src="{% static '/images/3.png' %}" alt="" width="100%" height="220px">
+			 					<div class="info">
+									<p>Деньги стали возможны благодаря людям, умеющим производить.    </p>
+									<span class="podpis">А. Рэнд</span>
+			 					</div>
+	    					</div>
+
+	    					<!-- Third Content -->
+	    					<div id="fragment-3" class="ui-tabs-panel" style="">
+								<img src="{% static '/images/2.png' %}" alt="" width="100%" height="220px">
+			 					<div class="info">
+									<p>Грандиозные вещи делаются грандиозными средствами. </p>
+									<span class="podpis">В. Гюго</span>
+	         				</div>
+	    					</div>
+
+	    					<!-- Fourth Content -->
+	    					<div id="fragment-4" class="ui-tabs-panel ui-tabs-hide" style="">
+								<img src="{% static '/images/4.png' %}" alt="" width="100%" height="220px">
+			 					<div class="info">
+									<p>Унция активных дел дороже фунта проповедей.    </p>
+									<span class="podpis">Э. Хаббард</span>
+	         				</div>
+	    					</div>
+		
+		 					<!-- Fifth Content -->
+	    					<div id="fragment-5" class="ui-tabs-panel ui-tabs-hide" style="">
+								<img src="{% static '/images/5.png' %}" alt="" width="100%" height="220px">
+			 					<div class="info">
+									<p>Невозможно создать себе репутацию только намерениями.</p>
+									<span class="podpis">Г. Форд</span>
+	         				</div>
+	    					</div>
+		
+							<ul class="ui-tabs-nav">
+	        					<li class="ui-tabs-nav-item" id="nav-fragment-1"><a href="#fragment-1"><span>0</span></a></li>
+	        					<li class="ui-tabs-nav-item" id="nav-fragment-2"><a href="#fragment-2"><span>0</span></a></li>
+	        					<li class="ui-tabs-nav-item ui-tabs-selected" id="nav-fragment-3"><a href="#fragment-3"><span>0</span></a></li>
+	        					<li class="ui-tabs-nav-item" id="nav-fragment-4"><a href="#fragment-4"><span>0</span></a></li>
+								<li class="ui-tabs-nav-item" id="nav-fragment-5"><a href="#fragment-5"><span></span></a></li>
+	      				</ul>
+						</div>
+					</div><!--end-sliderinner-->                
+				</div><!--end-slider-->
+				<div id="sidebars">
+					<div id="modules">
+						<div class="module_prodall">
+							<div>
+								<div>
+									<div>
+										<span class="like_h3">Продукция</span>
+										<ul class="menu">
+											<li class="item-224">
+												<a href="/zapasnye-chasti-k-zh-d-transportu">Запасные части к ж/д транспорту</a>
+											</li>
+											<li class="item-122">
+												<a href="/klapany-germeticheskie-ventilyacionnye">Клапаны герметические вентиляционные</a>
+											</li>
+											<li class="item-123">
+												<a href="/oborudovanie-dlya-obespecheniya-ekologicheskoj-bezopasnosti">Оборудование для обеспечения экологической безопасности</a>
+											</li>
+											<li class="item-124">
+												<a href="/yashhiki-upakovki-kontejnery-dlya-boepripasov">Ящики, упаковка и специальные контейнеры для боеприпасов</a>
+											</li>
+											<li class="item-125">
+												<a href="/nestandartizirovannoe-oborudovanie">Нестандартизированное оборудование</a>
+											</li>
+											<li class="item-126">
+												<a href="/emkostnoe-i-teploobmennoe-oborudovanie">Емкостное и теплообменное оборудование</a>
+											</li>
+											<li class="item-171">
+												<a href="/truboprovodnaya-armatura">Трубопроводная арматура</a>
+											</li>
+											<li class="item-172">
+												<a href="/metallokonstruktsii">Металлоконструкции</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>	
+               </div><!--end-modules-->
+					<div id="content">
+					<div id="topcontent">
+					</div><!--end-topcontent-->
+						<div id="comp">
+               	   <div class="item-page">
+								<p>Мы – это конструирование, изготовление, поставка и шеф-монтаж оборудования для промышленных объектов общего и специального назначения.</p>
+								<p>&nbsp;</p>
+								<p>Мы – это проектирование, изготовление, поставка и монтаж комплектов быстровозводимых зданий из легких металлоконструкций.</p>
+								<p>&nbsp;</p>
+								<p>Мы – это промышленные здания, цеха, склады, терминалы, торговые центры и павильоны, выставочные центры, авиационные и военные ангары.</p>
+								<p>Мы – это комплексное обеспечение поставок оборудования для объектов промышленного и специального назначения; проектные и строительно-монтажные работы.</p>
+								<p>&nbsp;</p>
+								<p>Наша миссия – развитие отечественной промышленности и защита окружающей среды.</p>
+								<p>&nbsp; &nbsp;</p>
+								<p><img src="{% static '/images/iso9000.jpg' %}" border="0" width="130" height="129" style="float: right; margin-left: 10px; margin-right: 0px;">Главное наше достижение — это репутация надежного партнера, всегда вовремя и качественно выполняющего свои обязательства.</p>
+								<p>&nbsp; &nbsp;</p>
+								<p>С 2006 года ООО «ДСТ импорт-экспорт» участвует в Федеральной целевой программе <strong>«Уничтожение запасов химического оружия на территории РФ»</strong>.</p>
+								<p>&nbsp;</p>
+								<p>Четкая координация действий и работ, осуществляемых членами Ассоциации, позволяет успешно исполнять обязательства перед заказчиками, в качестве которых выступают Министерство промышленности и торговли, Управления специального строительства.</p>
+								<p>&nbsp;</p>
+								<p>Постоянно совершенствуя производственные ресурсы, дорабатывая технологические процессы в зависимости от меняющихся условий и требований заказчиков, приобретая опыт работы, планируется осуществлять деятельность по поставке оборудования на атомные станции и объекты Министерства обороны, для чего получены необходимые <a href="/legitimnost-deyatelnosti">лицензии</a>, разработаны технические проекты.</p> 
+							</div>
+						</div>  
+					</div><!--end-content-->
+					<div class="clear">
+					</div><!--end-clear-->                
+				</div><!--end-sidebars-->
+			</div><!--end-senter-->
+			<div id="separator">
+				<div id="sepback">
+				</div><!--end-sepback-->
+			</div><!--end-separator-->          
+		</div><!--end-main-->
+	</div><!--end-all--> 
+	<div id="footer">
+  		<div style="position: relative;" id="footall">
+			<div id="footcenttop">
+      		<div id="botmenu">
+					<ul class="menu">
+						<li class="item-102 current active">
+							<span>
+								<a href="/">Главная</a>
+							</span>
+						</li>
+						<li class="item-108">
+							<span>
+								<a href="/news">События</a>
+							</span>
+						</li>
+						<li class="item-110 deeper parent">
+							<span>
+								<a href="/legitimnost-deyatelnosti">Легитимность деятельности</a>
+							</span>
+						</li>
+						<li class="item-111">
+							<span>
+								<a href="/contacts">Контакты</a>
+							</span>
+						</li>
+					</ul>
+      		</div><!--end-botmenu-->
+    		</div><!--footcenttop-->
+			<div style="line-height: 25px; margin-left: 200px;" id="footsentbot">
+      		<div class="custom"><p>© 2005-2018  — ООО «ДСТ импорт-экспорт»</p></div>
+			</div><!--end-footsentbot-->
+			<div style="position: absolute; left: 15px; bottom: 5px;">
+				<!-- begin of Top100 code -->
+				<!-- end of Top100 code -->
+
+				<!-- Yandex.Metrika informer -->
+				<!-- /Yandex.Metrika informer -->
+				<!-- Yandex.Metrika counter -->
+				<!-- /Yandex.Metrika counter -->
+			</div>
+
+			<div class="mesto_nahozhedeniya">
+				Адрес: г.Брянск, ул. Олега Кошевого, 36 <br>
+			  	тел/факс: +7 (4832) 61-35-69 <br>
+			  	тел: +7 (4832) 61-37-74, +7 (800) 333-28-11 <br>
+			  	E-mail: dst_04@rambler.ru
+			</div>
+  		</div><!--end-footall-->  
+	</div><!--end-footer-->
+	<div id="ui-datepicker-div" style="display: none;"></div>
+</body>
+</html>

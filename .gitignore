@@ -1,0 +1,5 @@
+__pycache__/
+.pages/__pycache__/
+.brmz/__pycache__/
+.env
+db.sqlite3

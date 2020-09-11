@@ -850,7 +850,7 @@ a.go_to_catalog:hover {
 #footall .mesto_nahozhedeniya {
 	color: #FFFFFF;
 	font-size: 12px;
-	bottom: 7px;
+	bottom: 13px;
 	position:absolute;
 	right:0px;
 }
@@ -872,17 +872,25 @@ table.list_product td.image{
 
 .item-271
 {
-	
 	background-color: grey;
-	
-	
 }
-
 
 .item-274
 {
-	
 	background-color: grey;
-	
-	
+}
+.content p {
+	text-indent: 20px;
+}
+
+.content h2 {
+	padding-top:30px;
+}
+
+.content h4 {
+	padding-top:20px;
+}
+
+.content-ol li{
+	list-style:decimal;
 }

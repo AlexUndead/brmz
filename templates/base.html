@@ -3,8 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-ru" lang="ru-ru" slick-uniqueid="3">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<meta name="description" content="Промышленно-торговая ассоциация «Деловое  сотрудничество» занимается поставками различного промышленного оборудования и изготовлением качественных деталей для ж/д транспорта.">
-	<title>ООО "Брасовский машзавод"</title>
+	<meta name="description" content="«Брасовский машзавод» занимается поставками различного промышленного оборудования и изготовлением качественных деталей для ж/д транспорта.">
+	<title>ООО «Брасовский машзавод»</title>
     	<link rel="stylesheet" href="{% static 'css/main.css' %}">
     	<link rel="stylesheet" href="{% static 'css/slider.css' %}">
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -114,22 +114,22 @@
 					<ul class="menu">
 						<li class="item-102 current active">
 							<span>
-								<a href="/">Главная</a>
+								<a href="{% url 'index' %}">Главная</a>
 							</span>
 						</li>
 						<li class="item-108">
 							<span>
-								<a href="/news">События</a>
+								<a href="{% url 'news' %}">События</a>
 							</span>
 						</li>
 						<li class="item-110 deeper parent">
 							<span>
-								<a href="/legitimnost-deyatelnosti">Легитимность деятельности</a>
+								<a href="{% url 'legitimacy_activities' %}">Легитимность деятельности</a>
 							</span>
 						</li>
 						<li class="item-111">
 							<span>
-								<a href="/contacts">Контакты</a>
+								<a href="{% url 'contacts' %}">Контакты</a>
 							</span>
 						</li>
 					</ul>
@@ -270,31 +270,13 @@
 							<div>
 								<div>
 									<div>
-										<span class="like_h3">Продукция</span>
+										<span class="like_h3"></span>
 										<ul class="menu">
 											<li class="item-224">
-												<a href="/zapasnye-chasti-k-zh-d-transportu">Запасные части к ж/д транспорту</a>
+												<a href="{% url 'about_us' %}">О нас</a>
 											</li>
 											<li class="item-122">
-												<a href="/klapany-germeticheskie-ventilyacionnye">Клапаны герметические вентиляционные</a>
-											</li>
-											<li class="item-123">
-												<a href="/oborudovanie-dlya-obespecheniya-ekologicheskoj-bezopasnosti">Оборудование для обеспечения экологической безопасности</a>
-											</li>
-											<li class="item-124">
-												<a href="/yashhiki-upakovki-kontejnery-dlya-boepripasov">Ящики, упаковка и специальные контейнеры для боеприпасов</a>
-											</li>
-											<li class="item-125">
-												<a href="/nestandartizirovannoe-oborudovanie">Нестандартизированное оборудование</a>
-											</li>
-											<li class="item-126">
-												<a href="/emkostnoe-i-teploobmennoe-oborudovanie">Емкостное и теплообменное оборудование</a>
-											</li>
-											<li class="item-171">
-												<a href="/truboprovodnaya-armatura">Трубопроводная арматура</a>
-											</li>
-											<li class="item-172">
-												<a href="/metallokonstruktsii">Металлоконструкции</a>
+												<a href="{% url 'download_catalog' %}">Скачать каталог</a>
 											</li>
 										</ul>
 									</div>
@@ -307,22 +289,10 @@
 					</div><!--end-topcontent-->
 						<div id="comp">
                	   <div class="item-page">
-								<p>Мы – это конструирование, изготовление, поставка и шеф-монтаж оборудования для промышленных объектов общего и специального назначения.</p>
-								<p>&nbsp;</p>
-								<p>Мы – это проектирование, изготовление, поставка и монтаж комплектов быстровозводимых зданий из легких металлоконструкций.</p>
-								<p>&nbsp;</p>
-								<p>Мы – это промышленные здания, цеха, склады, терминалы, торговые центры и павильоны, выставочные центры, авиационные и военные ангары.</p>
-								<p>Мы – это комплексное обеспечение поставок оборудования для объектов промышленного и специального назначения; проектные и строительно-монтажные работы.</p>
-								<p>&nbsp;</p>
-								<p>Наша миссия – развитие отечественной промышленности и защита окружающей среды.</p>
-								<p>&nbsp; &nbsp;</p>
-								<p><img src="{% static '/images/iso9000.jpg' %}" border="0" width="130" height="129" style="float: right; margin-left: 10px; margin-right: 0px;">Главное наше достижение — это репутация надежного партнера, всегда вовремя и качественно выполняющего свои обязательства.</p>
-								<p>&nbsp; &nbsp;</p>
-								<p>С 2006 года ООО «Брасовский машзавод» участвует в Федеральной целевой программе <strong>«Уничтожение запасов химического оружия на территории РФ»</strong>.</p>
-								<p>&nbsp;</p>
-								<p>Четкая координация действий и работ, осуществляемых членами Ассоциации, позволяет успешно исполнять обязательства перед заказчиками, в качестве которых выступают Министерство промышленности и торговли, Управления специального строительства.</p>
-								<p>&nbsp;</p>
-								<p>Постоянно совершенствуя производственные ресурсы, дорабатывая технологические процессы в зависимости от меняющихся условий и требований заказчиков, приобретая опыт работы, планируется осуществлять деятельность по поставке оборудования на атомные станции и объекты Министерства обороны, для чего получены необходимые <a href="/legitimnost-deyatelnosti">лицензии</a>, разработаны технические проекты.</p> 
+								<div class="content">
+									{% block content %}
+									{% endblock %}
+								</div>
 							</div>
 						</div>  
 					</div><!--end-content-->
@@ -343,29 +313,29 @@
 					<ul class="menu">
 						<li class="item-102 current active">
 							<span>
-								<a href="/">Главная</a>
+								<a href="{% url 'index' %}">Главная</a>
 							</span>
 						</li>
 						<li class="item-108">
 							<span>
-								<a href="/news">События</a>
+								<a href="{% url 'news' %}">События</a>
 							</span>
 						</li>
 						<li class="item-110 deeper parent">
 							<span>
-								<a href="/legitimnost-deyatelnosti">Легитимность деятельности</a>
+								<a href="{% url 'legitimacy_activities' %}">Легитимность деятельности</a>
 							</span>
 						</li>
 						<li class="item-111">
 							<span>
-								<a href="/contacts">Контакты</a>
+								<a href="{% url 'contacts' %}">Контакты</a>
 							</span>
 						</li>
 					</ul>
       		</div><!--end-botmenu-->
     		</div><!--footcenttop-->
 			<div style="line-height: 25px; margin-left: 200px;" id="footsentbot">
-      		<div class="custom"><p>© 2005-2018  — ООО «Брасовский машзавод»</p></div>
+      		<div class="custom"><p>© 2005-2020  — ООО «Брасовский машзавод»</p></div>
 			</div><!--end-footsentbot-->
 			<div style="position: absolute; left: 15px; bottom: 5px;">
 				<!-- begin of Top100 code -->
@@ -378,10 +348,10 @@
 			</div>
 
 			<div class="mesto_nahozhedeniya">
-				Адрес: г.Брянск, ул. Олега Кошевого, 36 <br>
-			  	тел/факс: +7 (4832) 61-35-69 <br>
-			  	тел: +7 (4832) 61-37-74, +7 (800) 333-28-11 <br>
-			  	E-mail: dst_04@rambler.ru
+				Адрес: Брянская область, Брасовский район, <br>
+				рабочий поселок Локоть, улица Советская дом 2, офис 11<br>
+			  	тел: +7 (4832) 61-08-08, +7 (980) 334-63-8 <br>
+			  	E-mail: Brmzavod32@gmail.com
 			</div>
   		</div><!--end-footall-->  
 	</div><!--end-footer-->

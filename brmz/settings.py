@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'False')
 
-ALLOWED_HOSTS = ['brmz.herokuapp.com']
+ALLOWED_HOSTS = ['brmz.herokuapp.com', 'www.br-mz.ru']
 
 
 # Application definition
